@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Shelf</title>
+  <style>
+    .shelf {
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-start;
+      flex-wrap: wrap; /* makes it responsive */
+    }
+
+    .shelf-item {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      min-width: 200px;
+      flex: 1 1 200px; /* responsive growth */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <input type="text" id="search-input" placeholder="Search your cologne...">
+  <button id="search-button">Search</button>
+  <div id="search-results">
+    <!-- Search results will be displayed here -->
+  </div>
+
+
+  <div class="shelf">
+    <div class="shelf-item">Item 1</div>
+    <div class="shelf-item">Item 2</div>
+    <div class="shelf-item">Item 3</div>
+  </div>
+
+</body>
+</html>
